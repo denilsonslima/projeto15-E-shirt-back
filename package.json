@@ -1,7 +1,6 @@
 {
   "name": "projeto15-e-shirt-back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -17,6 +16,16 @@
     "express": "^4.18.2",
     "joi": "^17.7.0",
     "mongodb": "^4.13.0",
+    "nodemon": "^2.0.20",
     "uuid": "^9.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denilsonslima/projeto15-E-shirt-back.git"
+  },
+  "bugs": {
+    "url": "https://github.com/denilsonslima/projeto15-E-shirt-back/issues"
+  },
+  "homepage": "https://github.com/denilsonslima/projeto15-E-shirt-back#readme",
+  "description": ""
 }
