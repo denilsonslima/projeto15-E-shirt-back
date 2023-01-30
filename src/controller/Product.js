@@ -39,10 +39,10 @@ export async function pegarProduto(req, res){
     const token = authorization?.replace('Bearer ', '').trim()
 
     try {
-        const user = await db.collection("sessoes").find({token: token}).toArray()
+        const user = await db.collection("sessoes").find({token: token})
         if(!user) return res.sendStatus(422)
 
-        const dadosUser = await db.collection("/product").find({idUser: user.idUser}).toArray()
+        const dadosUser = await db.collection("product").find().toArray()
         res.send(dadosUser)
     } catch (error) {
         console.log(error)
